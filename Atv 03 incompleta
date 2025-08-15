@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //variaveis
+	    
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    double valordamensalidade, custocomtransporte, custocomalimentacao = 0;
+	    
+	    //entradas
+	    System.out.println("Insira seu ano de nascimento");
+	    anodeenascimento = teclado.Double ();
+	    System.out.println("Insira o Ano Atual");
+	     anoatual = teclado.nextInt ();
+	       
+	    
+	   
+	   
+	    //processamento
+	    
+	    diasvividos = (anoatual - anodeenascimento ) *365;
+	    
+	    //saidas
+	    
+		System.out.println(" Você viveu : " + diasvividos + " dias");
+		
+	}
+}
