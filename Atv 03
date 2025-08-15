@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //variaveis
+	    
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    double  R$gastomensal, R$gastoanual, valordamensalidade, custocomtransportemensal, custocomalimentacaomensal = 0;
+	    
+	    //entradas
+	    System.out.println("Insira seu gasto com a mensalidade da faculdade");
+	    valordamensalidade= teclado.nextDouble ();
+	    System.out.println("Insira o seu custo mensal com transporte");
+	     custocomtransportemensal = teclado.nextDouble ();
+	       System.out.println("Insira o seu custo mensal com alimentacao");
+	    custocomalimentacaomensal = teclado.nextDouble ();
+	   
+	   
+	    //processamento
+	    
+	    R$gastomensal = (valordamensalidade + custocomalimentacaomensal + custocomtransportemensal );
+	    R$gastoanual = (R$gastomensal *12);
+	    
+	    //saidas
+	    
+		System.out.println (" Seu gasto mensal com a faculdade e de : R$" +R$gastomensal +" Reais");
+		
+		System.out.println (" Seu gasto anual com a faculdade e de : R$" +R$gastoanual + " Reais");
+		
+	}
+}
