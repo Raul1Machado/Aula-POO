@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //variaveis
+	    
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    double nota1, nota2, nota3,  media = 0.00;
+	    
+	    //entradas
+	    System.out.println("Calculadora de média");
+	    System.out.println("Digite a nota 1");
+	    nota1 = teclado.nextDouble ();
+	    System.out.println("Digite a nota 2");
+	     nota2 = teclado.nextDouble ();
+	       System.out.println("Digite a nota 3");
+	       nota3 = teclado.nextDouble ();
+	    
+	   
+	   
+	    //processamento
+	    
+	    media = (nota1 + nota2+ nota3 ) /3;
+	    
+	    //saidas
+	    
+		System.out.println(" Sua média é : " + media);
