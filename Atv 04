@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //variaveis
+	    
+	    Scanner teclado = new Scanner(System.in);
+	    DecimalFormat df = new DecimalFormat("#.##");
+	    
+	    double  raio, area, pi = 0;
+	    
+	    
+	    //entradas
+	    System.out.println("Insira o Raio do circulo (distância do centro da circunferência até qualquer ponto da borda.) em centimetros: ");
+	   raio= teclado.nextDouble ();
+	    
+	   pi = 3.14159;
+	   
+	    //processamento
+	    
+	    area = (raio * raio ) * pi;
+	    
+	    //decidi criar uma formatacao nao foi o chat 
+	    
+	    String arredondar = df.format (area) ;
+	    
+	    //saidas
+	    
+		System.out.println ("A area aproximada do seu circulo é de: " + arredondar + " cm" );
+		
+	   }
+	
+	}
