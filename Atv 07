@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.text.DecimalFormat; 
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //variaveis
+	    
+	    Scanner teclado = new Scanner(System.in);
+	    DecimalFormat df = new DecimalFormat("#,##");
+	   
+	    
+	    double  Raio, volume, altura = 0;
+	    
+	    
+	    //entradas
+	    System.out.println("Calculadora de volumes: ");
+	     System.out.println("Digite o Raio da garrafa de oleo: ");
+	   Raio= teclado.nextDouble ();
+	    System.out.println("Digite a altura da garrafa de oleo: ");
+	      altura= teclado.nextDouble ();
+	 
+	   
+	    //processamento
+	    
+	    volume = (Raio * Raio ) * Math.PI * altura;
+	    
+	    
+	    
+	    
+	    
+	    
+	    //saidas
+	    
+		System.out.println ("O volume aproximado da sua garrafa e de : " + df.format ( volume));
+		
+			
+			
+	   }
+	
+	}
