@@ -43,3 +43,8 @@ VALOR = (VALOR * (TAXA / 100) * TEMPO).
 Q9 – COVERSÃO MONETÁRIA – Crie uma aplicação que deve receber do usuário um determinado valor
 em REAIS, e também a cotação do Dolar e Euro, baseado nestas informações, o programa deverá
 calcular e apresentar qual o valor que o usuário tem em Doláres e Euros convertidos.
+
+
+Q10 – MÉDIA FINAL LP – Crie uma aplicação que calcule a média final de um determinado aluno, a
+regra para cálculo da média final é data através da imagem abaixo: Atenção o programa deverá exibir
+a nota da NP1, NP2 e também MF.
