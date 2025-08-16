@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.text.DecimalFormat; 
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //variaveis
+	    
+	    Scanner teclado = new Scanner(System.in);
+	    DecimalFormat df = new DecimalFormat("#.00");
+	   
+	    
+	    double  parcela, valor,valorinicial, tempo, taxa  = 0;
+	    
+	    
+	    //entradas
+	    System.out.println("Calculadora de atraso: ");
+	     System.out.println("Digite o valor inicial: ");
+	   valorinicial= teclado.nextDouble ();
+	   System.out.println("Digite tempo em atraso: ");
+	   tempo= teclado.nextDouble ();
+	    System.out.println("Digite a taxa: ");
+	      taxa= teclado.nextDouble ();
+	 
+	   
+	    //processamento
+	    
+	    valor = (valorinicial *(taxa/100)*tempo) ;
+	    parcela = valor + valorinicial;
+	    
+	    
+	    
+	    
+	    
+	    //saidas
+	    
+		System.out.println ("O valor total da parcela e de : " + df.format ( parcela));
+		
+			
+			
+	   }
+	
+	}
