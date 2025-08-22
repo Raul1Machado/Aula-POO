@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main
@@ -9,7 +10,7 @@ public class Main
 	    Scanner teclado = new Scanner(System.in);
 	   
 	    
-	    double  salariomb,vr, horaaula,qntaula,acrescimo,ir,inss,salarioliq = 0;
+	    double  salariomb,vr, horaaula,qntaula,acrescimo,ir,inss,salarioliq, plnodon = 0;
 	    
 	    
 	    //entradas
@@ -24,8 +25,10 @@ public class Main
 	    vr = salariomb * 0.10;
 	    salariomb = salariomb + vr;
 	    ir = 0.05 * salariomb ;
-	    inss = 0.07 * salariomb ;
-	    salarioliq = (salariomb - ir - inss);
+	    inss = 0.07 * salariomb;
+	    plnodon= 0.05 * salariomb;
+	    
+	    salarioliq = (salariomb - ir - inss - plnodon);
 	    
 	    
 	    
@@ -38,7 +41,9 @@ public class Main
 		System.out.println ("Seu vr e de : R$ " + vr);
 		System.out.println ("Seu desconto total de ir e de : R$ " + ir);
 		System.out.println ("Seu desconto total de inss e de : R$ " + inss);
+		System.out.println ("Seu desconto total de plano odontologico e de : R$ " + plnodon);
 			System.out.println ("Seu salario liquido total e de : R$ " + salarioliq);
+			
 			
 			
 	   }
