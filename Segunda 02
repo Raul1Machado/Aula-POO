@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double numero = 0;
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.println("Informe um numero : ");
+	    numero = teclado.nextDouble();
+	    
+	    
+	    if (numero <= 0.0 ) {
+	       numero = (numero * -1);
+	   }
+	      
+	            
+	    System.out.println(" O numero agora e : "+ numero);
+	}
+}
