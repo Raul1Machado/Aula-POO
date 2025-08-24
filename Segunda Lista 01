@@ -1,1 +1,24 @@
 
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int primeiro, segundo,diferenca = 0;
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.println("Informe um numero inteiro: ");
+	    primeiro = teclado.nextInt();
+	    
+	    System.out.println("Informe outro numero inteiro: ");
+	    segundo = teclado.nextInt();
+	    
+	    if (primeiro > segundo) {
+	        diferenca = (primeiro - segundo);
+	   }else{
+	       diferenca = ( segundo - primeiro);
+	            }
+	    System.out.println(" A diferenca e de : "+ diferenca);
+	}
+}
+
