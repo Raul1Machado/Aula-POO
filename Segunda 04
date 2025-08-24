@@ -1,0 +1,38 @@
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double nota1, nota2,nota3,nota4,prova, media = 0;
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.println("Informe a nota 1  : ");
+	    nota1 = teclado.nextDouble();
+	      System.out.println("Informe a nota 2  : ");
+	    nota2 = teclado.nextDouble();
+	     System.out.println("Informe a nota 3  : ");
+	    nota3 = teclado.nextDouble();
+	    System.out.println("Informe a nota 4  : ");
+	    nota4 = teclado.nextDouble();
+	    media=( nota1+ nota2+ nota3+ nota4) / 4;
+	    
+	    if (media >= 7.0 ) {
+	       System.out.println("Aprovado, Sua media foi " + media);
+	   }
+	      else {
+	          System.out.println("Digite sua nota da prova: ");
+	          prova= teclado.nextDouble();
+	          media=(media + prova)/2;
+	           
+	           if (media >= 7.0 ){ 
+	       System.out.println("Aprovado, Sua media foi " + media);
+	           }
+	           else {
+	          System.out.println("Reprovado, Sua media foi " + media);
+	           }
+	      }
+	            
+	    
+	}
+}
