@@ -18,10 +18,10 @@ public class Main
 	    media=( nota1+ nota2+ nota3+ nota4) / 4;
 	    
 	    if (media >= 5.0 ) {
-	       System.out.println("Aprovado");
+	       System.out.println("Aprovado, Sua media foi " + media);
 	   }
 	      else {
-	          System.out.println("Reprovado");
+	          System.out.println("Reprovado, Sua media foi " + media);
 	      }
 	            
 	    
