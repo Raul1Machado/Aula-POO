@@ -1,0 +1,36 @@
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double a,b,c,d = 0;
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.println("Informe o numero a  : ");
+	    a = teclado.nextDouble();
+	     System.out.println("Informe numero b  : ");
+	    b = teclado.nextDouble();
+	     System.out.println("Informe o numero  c  : ");
+	    c = teclado.nextDouble();
+	     System.out.println("Informe o numero  d  : ");
+	    d = teclado.nextDouble();
+	  
+	 
+	       System.out.println("-------------------------------------------------------------------------------------------");
+	    
+	    if (a % 2 == 0 && a % 3 == 0 ) {
+	       System.out.println("A é divisivel por 2 e 3");
+	   }
+	           if (b % 2 == 0 && b % 3 == 0 ) {
+	       System.out.println("B é divisivel por 2 e 3");
+	   }
+	      if (c % 2 == 0 && c % 3 == 0 ) {
+	       System.out.println("C é divisivel por 2 e 3");
+	   }
+	    if (d % 2 == 0 && d % 3 == 0 ) {
+	       System.out.println("D é divisivel por 2 e 3");
+	   }
+	}
+}
