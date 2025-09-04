@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double a = 0;
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.println("Digite um numero entre 1 e 9 ");
+	    a = teclado.nextDouble();
+	    if ( a <= 1 || a > 9 )  {
+	        System.out.println("O numero esta fora da faixa permitida ");
+	        
+	    } else {
+	        System.out.println("O numero esta na faixa permitida ");
+	    }
+	}
+}
