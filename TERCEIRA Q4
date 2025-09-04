@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ValorAteTres {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int valor = scanner.nextInt();
+
+        // Verifica se o valor NÃO é maior que 3
+        if (!(valor != 0 && valor != 1 && valor != 2 && valor != 3)) {
+            System.out.println("O valor é: " + valor);
+        }
+    }
+}
